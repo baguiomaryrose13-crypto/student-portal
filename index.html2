@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            background-color: #f2f5fa;
+
+            color: #333;
+
+        }
+
+        header {
+
+            background-color: #234b78;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+        }
+
+        nav {
+
+            background-color: #173654;
+
+            text-align: center;
+
+            padding: 15px;
+
+        }
+
+        nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            margin: 12px;
+
+            font-weight: bold;
+
+        }
+
+        nav a:hover {
+
+            color: #ffd166;
+
+        }
+
+        main {
+
+            max-width: 1000px;
+
+            margin: 25px auto;
+
+            padding: 15px;
+
+        }
+
+        section {
+
+            background: white;
+
+            padding: 22px;
+
+            margin-bottom: 20px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+        }
+
+        h2 {
+
+            color: #234b78;
+
+            border-bottom: 2px solid #e5ebf2;
+
+            padding-bottom: 10px;
+
+        }
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+        }
+
+        th, td {
+
+            border: 1px solid #ddd;
+
+            padding: 12px;
+
+            text-align: left;
+
+        }
+
+        th {
+
+            background-color: #234b78;
+
+            color: white;
+
+        }
+
+        footer {
+
+            background-color: #173654;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 15px;
+
+        }
+
+        @media(max-width:600px) {
+
+            nav a {
+
+                display: inline-block;
+
+                margin: 7px;
+
+                font-size: 13px;
+
+            }
+
+            main {
+
+                padding: 10px;
+
+            }
+
+            section {
+
+                overflow-x: auto;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Student Portal</h1>
+
+        <p>Welcome to LearnHub!</p>
+
+    </header>
+
+    <nav>
+
+        <a href="#dashboard">Dashboard</a>
+
+        <a href="#schedule">Class Schedule</a>
+
+        <a href="#grades">Grades</a>
+
+        <a href="#announcements">Announcements</a>
+
+        <a href="#profile">Student Profile</a>
+
+    </nav>
+
+    <main>
+
+        <section id="dashboard">
+
+            <h2>Dashboard</h2>
+
+            <h3>Good day, Alex Santos!</h3>
+
+            <p>Welcome to your student portal.</p>
+
+            <p>Enrolled Subjects: 5</p>
+
+            <p>Current GWA: 1.50</p>
+
+            <p>Attendance: 98%</p>
+
+        </section>
+
+        <section id="schedule">
+
+            <h2>Class Schedule</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Time</th>
+
+                    <th>Subject</th>
+
+                    <th>Room</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>7:30 AM</td>
+
+                    <td>Introduction to Computing</td>
+
+                    <td>Room 101</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>9:30 AM</td>
+
+                    <td>Computer Programming</td>
+
+                    <td>Computer Lab 1</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>1:00 PM</td>
+
+                    <td>Purposive Communication</td>
+
+                    <td>Room 205</td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+        <section id="grades">
+
+            <h2>Grades</h2>
+
+            <p>Introduction to Computing: 1.50</p>
+
+            <p>Computer Programming: 1.25</p>
+
+            <p>Purposive Communication: 1.75</p>
+
+            <p>Mathematics: 2.00</p>
+
+            <p>Understanding the Self: 1.50</p>
+
+        </section>
+
+        <section id="announcements">
+
+            <h2>Announcements</h2>
+
+            <ul>
+
+                <li>Upcoming examination schedule.</li>
+
+                <li>Reminder to complete school requirements.</li>
+
+                <li>Campus organization activities.</li>
+
+                <li>Library operating hours update.</li>
+
+            </ul>
+
+        </section>
+
+        <section id="profile">
+
+            <h2>Student Profile</h2>
+
+            <p>Name: Alex Santos</p>
+
+            <p>Student ID: 2026-000456</p>
+
+            <p>Course: BS Information Technology</p>
+
+            <p>Year Level: First Year</p>
+
+            <p>Section: BSIT - 1B</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>© 2026 Student Portal | LearnHub</p>
+
+    </footer>
+
+    <script>
+
+        console.log("Welcome to LearnHub Student Portal!");
+
+        document.querySelectorAll('nav a').forEach(link => {
+
+            link.addEventListener('click', function() {
+
+                console.log("Navigating to " + this.textContent);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
